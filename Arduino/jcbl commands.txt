@@ -1,0 +1,7 @@
+jbcli login -e yadira.zavala@jitterbit.com -h citizen.jitterbit.net -p Winter18#
+
+jbcli validate recipe -r Jira_Harvest_Deployment_File.json
+
+jbcli recipe upload -j Jira_To_Harvest.jpk -r Jira_Harvest_Deployment_File.json
+
+jbcli recipe update 5071 -j Jira_To_Harvest.jpk -r Jira_Harvest_Deployment_File.json
